@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>StoryArc Aerial | Cinematic FPV and Aerial Storytelling in Omaha, Nebraska</title>
+<meta name="description" content="StoryArc Aerial is a cinematic and FPV specialist in Omaha, Nebraska. FPV flythroughs, brand stories, event coverage, and an aerial unit for film and video production teams.">
+<style>
+  :root{
+    --bg:#101014;
+    --bg2:#17171d;
+    --panel:#1c1c23;
+    --ink:#f4f1ea;
+    --muted:#b9b4a8;
+    --accent:#e8a33d;
+    --accent2:#c96f2e;
+    --line:#2a2a33;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:"Helvetica Neue",Arial,sans-serif;line-height:1.6}
+  a{color:var(--accent);text-decoration:none}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  header{position:sticky;top:0;background:rgba(16,16,20,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+  .brand{font-size:20px;font-weight:800;letter-spacing:2px;color:var(--ink)}
+  .brand span{color:var(--accent)}
+  .navlinks{display:flex;gap:26px;align-items:center;font-size:15px}
+  .navlinks a{color:var(--ink)}
+  .navlinks a:hover{color:var(--accent)}
+  .btn{display:inline-block;background:var(--accent);color:#14100a;font-weight:700;padding:12px 22px;border-radius:6px;font-size:15px}
+  .btn:hover{background:var(--accent2);color:#fff}
+  .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+  .btn.ghost:hover{border-color:var(--accent);color:var(--accent)}
+  .hero{padding:84px 0 64px;background:radial-gradient(900px 480px at 70% 0%,rgba(232,163,61,.16),transparent 60%),linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%)}
+  .eyebrow{color:var(--accent);font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:18px}
+  h1{font-size:52px;line-height:1.08;font-weight:800;max-width:760px}
+  h1 em{font-style:normal;color:var(--accent)}
+  .hero p.lede{margin:22px 0 30px;font-size:19px;color:var(--muted);max-width:640px}
+  .hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+  .showreel{margin-top:48px;border:1px solid var(--line);border-radius:12px;min-height:340px;position:relative;overflow:hidden}
+  .showreel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .showreel .tag{position:absolute;left:16px;bottom:16px;background:rgba(10,10,12,.75);padding:8px 14px;border-radius:6px;font-size:13px;color:var(--ink)}
+  .audiences{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0;text-align:center;color:var(--muted);font-size:15px;letter-spacing:1px}
+  .audiences strong{color:var(--ink)}
+  section{padding:72px 0}
+  h2{font-size:34px;font-weight:800;margin-bottom:12px}
+  .sub{color:var(--muted);max-width:680px;margin-bottom:36px;font-size:17px}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:28px}
+  .card h3{font-size:20px;margin-bottom:8px;color:var(--accent)}
+  .card p{color:var(--muted);font-size:15.5px}
+  .diff{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .work{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .shot{border-radius:12px;border:1px solid var(--line);min-height:210px;position:relative;overflow:hidden;color:var(--ink);font-weight:700}
+  .shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .shot .cap{position:absolute;left:0;right:0;bottom:0;padding:30px 18px 14px;background:linear-gradient(transparent,rgba(8,8,10,.88))}
+  .shot small{display:block;font-weight:400;color:var(--muted)}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .step .num{font-size:30px;font-weight:800;color:var(--accent)}
+  .step h3{font-size:17px;margin:6px 0}
+  .step p{color:var(--muted);font-size:15px}
+  form{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:32px;max-width:720px}
+  label{display:block;font-size:14px;font-weight:700;margin:16px 0 6px}
+  label:first-child{margin-top:0}
+  input,select,textarea{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:6px;color:var(--ink);padding:12px;font-size:15px;font-family:inherit}
+  textarea{min-height:120px;resize:vertical}
+  form .btn{margin-top:22px;border:none;cursor:pointer}
+  .fineprint{color:var(--muted);font-size:13px;margin-top:14px}
+  .ticks{list-style:none;margin-top:6px}
+  .ticks li{padding:6px 0 6px 26px;position:relative;color:var(--muted);font-size:15.5px}
+  .ticks li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:700}
+  .ctaband{background:linear-gradient(135deg,#2a2118,#171208);border:1px solid var(--line);border-radius:12px;padding:36px;text-align:center}
+  .ctaband p{color:var(--muted);margin-bottom:20px}
+  footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-size:14px}
+  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  @media (max-width:820px){
+    h1{font-size:38px}
+    .grid,.diff,.work,.steps{grid-template-columns:1fr}
+    .navlinks a:not(.btn){display:none}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand">STORY<span>ARC</span> AERIAL</div>
+    <nav class="navlinks">
+      <a href="services.html">Services</a>
+      <a href="filmmakers.html">For Filmmakers</a>
+      <a href="safety.html">Safety</a>
+      <a href="#work">Work</a>
+      <a class="btn" href="quote.html">Get a Quote</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Cinematic FPV and Aerial Videography · Omaha, Nebraska</div>
+    <h1>Anyone can buy a drone. <em>Few can tell the story.</em></h1>
+    <p class="lede">StoryArc Aerial is a cinematic and FPV specialist for businesses, events, and production teams. Every flight is planned around the story you need to tell and the edit it has to fit.</p>
+    <div class="cta">
+      <a class="btn" href="quote.html">Get a Quote</a>
+      <a class="btn ghost" href="services.html">See What We Do</a>
+    </div>
+    <div class="showreel">
+      <img src="hero-showreel.jpg" alt="FPV drone in flight over a riverfront city skyline at golden hour">
+      <span class="tag">Showreel placeholder. Generated stand in until the real reel is cut.</span>
+    </div>
+  </div>
+</div>
+
+<div class="audiences">
+  <div class="wrap">Built for <strong>businesses</strong> · <strong>events</strong> · <strong>film and video production companies</strong></div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <h2>Services</h2>
+    <p class="sub">Four ways to put a camera in motion, each one planned like a production, not a hobby flight.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>FPV Flythroughs</h3>
+        <p>One continuous flight through your space, from the front door to the far corner, so viewers feel like they have walked it themselves. Venues, showrooms, facilities, attractions, and anywhere a walkthrough sells the place.</p>
+      </div>
+      <div class="card">
+        <h3>Brand and Business Stories</h3>
+        <p>Aerial sequences that open, carry, and close your brand film. Planned with your message in mind, so the flying serves the story instead of distracting from it.</p>
+      </div>
+      <div class="card">
+        <h3>Event Coverage</h3>
+        <p>The energy of the day from above and through the middle of it. Festivals, openings, game days, and gatherings, captured in motion and delivered ready to share.</p>
+      </div>
+      <div class="card">
+        <h3>An Aerial Unit for Productions</h3>
+        <p>For film and videography companies: we slot into your crew and your process. Shot planning with your director, flight paths built for your edit, and footage delivered in the formats your production expects.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="difference" style="background:var(--bg2)">
+  <div class="wrap">
+    <h2>The Difference</h2>
+    <p class="sub">Plenty of people own a drone. Almost none of them think like videographers. That gap is the whole business.</p>
+    <div class="diff">
+      <div class="card">
+        <h3>Story First</h3>
+        <p>Every flight path is a narrative choice. Where the camera enters, what it reveals, and where it lands should all mean something.</p>
+      </div>
+      <div class="card">
+        <h3>Built for the Edit</h3>
+        <p>Shots are planned against the final cut, not gathered as random pretty clips. You get sequences that assemble into a story.</p>
+      </div>
+      <div class="card">
+        <h3>Fits Your Process</h3>
+        <p>Planning call, shot list, schedule, delivery specs. We work the way productions work, because that is where we come from.</p>
+      </div>
+    </div>
+    <p style="margin-top:30px;font-size:19px;max-width:720px">An off the shelf drone records what a place looks like. <strong style="color:var(--accent)">We show what it feels like.</strong></p>
+  </div>
+</section>
+
+<section id="filmmakers">
+  <div class="wrap">
+    <h2>Built to Plug Into Your Production</h2>
+    <p class="sub">For film and videography companies, StoryArc Aerial is not another vendor to manage. We are the aerial unit you do not have to staff: inside your creative process from the first call, on your call sheet on the day, and delivering files your editor can use immediately.</p>
+    <div class="card" style="max-width:760px">
+      <ul class="ticks">
+        <li>Creative integration with your director, DP, and editor</li>
+        <li>White label friendly: we shoot under your brand, your client stays yours</li>
+        <li>Delivery matched to your production settings and timeline</li>
+      </ul>
+      <p style="margin-top:16px"><a href="filmmakers.html"><strong>See how we work with filmmakers →</strong></a></p>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap">
+    <h2>How It Works</h2>
+    <p class="sub">A simple process, run like a production from the first call to the final file.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="num">01</div>
+        <h3>Tell Us the Story</h3>
+        <p>A short call about your project, your audience, and what success looks like.</p>
+      </div>
+      <div class="step">
+        <div class="num">02</div>
+        <h3>Flight Plan</h3>
+        <p>Shot list, location scout, and timing built around light, people, and your schedule.</p>
+      </div>
+      <div class="step">
+        <div class="num">03</div>
+        <h3>Shoot Day</h3>
+        <p>Cinematic and FPV flights captured to the plan, with room for the moments nobody planned.</p>
+      </div>
+      <div class="step">
+        <div class="num">04</div>
+        <h3>Delivery</h3>
+        <p>An edited sequence, or production ready clips for your own edit. On schedule, in the format you asked for.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="safety" style="padding-top:0">
+  <div class="wrap">
+    <div class="ctaband">
+      <h2>By the Book, Every Flight</h2>
+      <p>Airspace checked before we book. Venue rules confirmed before we fly. Flight paths planned around people, and the willingness to say no to a shot that breaks a rule, with a legal alternative that still serves the story. That is the standard your project deserves.</p>
+      <a class="btn ghost" href="safety.html" style="border-color:var(--accent)">Read Our Safety Commitments</a>
+    </div>
+  </div>
+</section>
+
+<section id="work" style="background:var(--bg2)">
+  <div class="wrap">
+    <h2>Selected Work</h2>
+    <p class="sub">The reel is being assembled. These frames are generated placeholders that show the kinds of stories we tell.</p>
+    <div class="work">
+      <div class="shot"><img src="work-venue.jpg" alt="FPV drone view flying through the door of an event venue"><div class="cap">Venue Flythrough<small>One take, door to rooftop</small></div></div>
+      <div class="shot"><img src="work-brand.jpg" alt="Aerial view over a Nebraska main street at sunset"><div class="cap">Brand Story<small>Aerial opening and closing sequence</small></div></div>
+      <div class="shot"><img src="work-event.jpg" alt="Aerial view over an outdoor festival at dusk"><div class="cap">Event Coverage<small>Game day energy, above the crowd</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="quote">
+  <div class="wrap">
+    <h2>Get a Quote</h2>
+    <p class="sub">Tell us about the project. We reply with honest next steps and a price built around what you actually need.</p>
+    <form action="https://formsubmit.co/brock@brockbrown.org" method="POST">
+      <input type="hidden" name="_subject" value="New StoryArc Aerial quote request">
+      <input type="hidden" name="_template" value="table">
+      <label for="name">Your name</label>
+      <input id="name" name="name" type="text" required>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required>
+      <label for="phone">Phone (optional)</label>
+      <input id="phone" name="phone" type="tel">
+      <label for="type">Project type</label>
+      <select id="type" name="project_type" required>
+        <option value="">Choose one</option>
+        <option>Business or brand story</option>
+        <option>Event coverage</option>
+        <option>FPV flythrough</option>
+        <option>Production partner / aerial unit</option>
+        <option>Something else</option>
+      </select>
+      <label for="location">Project location</label>
+      <input id="location" name="location" type="text" placeholder="Omaha metro or beyond">
+      <label for="date">Project date (if known)</label>
+      <input id="date" name="date" type="text" placeholder="Month and year is fine">
+      <label for="message">Tell us the story</label>
+      <textarea id="message" name="message" required placeholder="What are we filming, who is it for, and what should viewers feel?"></textarea>
+      <button class="btn" type="submit">Send Quote Request</button>
+      <p class="fineprint">Staging note: this form activates on its first submission, which sends a confirmation to the inbox. Your details go only to StoryArc Aerial.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><strong style="color:var(--ink)">StoryArc Aerial</strong> · Omaha, Nebraska</div>
+    <div>brock@brockbrown.org</div>
+    <div>Cinematic FPV and aerial storytelling</div>
+  </div>
+</footer>
+
+</body>
+</html>

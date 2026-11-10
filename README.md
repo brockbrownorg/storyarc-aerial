@@ -12,7 +12,11 @@ For businesses, events, and other film and videography companies. Differentiatio
 
 ## Files
 
-- index.html — single page site (hero, services, difference, process, selected work placeholders, quote form)
+- index.html — homepage (hero, services, difference, filmmaker highlight, process, safety band, selected work placeholders, quote form)
+- services.html — detailed services with per service calls to action
+- filmmakers.html — production partner page: creative team integration, deliverables, FAQ, production consult call to action
+- safety.html — safety and rules page: airspace, venue rules, people, weather, privacy, the right to say no (process based; no credential or insurance claims)
+- quote.html — dedicated quote page; the form preselects project type from a ?type= link parameter (business, event, flythrough, production)
 - hero-showreel.jpg, work-venue.jpg, work-brand.jpg, work-event.jpg — generated placeholder images (2026-11-10), standing in until real footage stills are ready
 - robots.txt — blocks crawlers during staging; replace with an allowing version at launch
 
