@@ -22,6 +22,7 @@
   .navlinks a:hover{color:var(--accent)}
   .btn{display:inline-block;background:var(--accent);color:#14100a;font-weight:700;padding:12px 22px;border-radius:6px;font-size:15px}
   .btn:hover{background:var(--accent2);color:#fff}
+  .menu-btn{display:none;background:transparent;border:1px solid var(--line);border-radius:6px;color:var(--ink);font-size:20px;line-height:1;padding:7px 12px;cursor:pointer}
   .pagehero{padding:64px 0 6px}
   .eyebrow{color:var(--accent);font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:16px}
   h1{font-size:42px;line-height:1.12;font-weight:800;max-width:720px}
@@ -37,7 +38,7 @@
   .ctaband p{color:var(--muted);margin-bottom:20px}
   footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-size:14px}
   footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-  @media (max-width:820px){h1{font-size:34px}.grid{grid-template-columns:1fr}.navlinks a:not(.btn){display:none}}
+  @media (max-width:820px){h1{font-size:34px}.grid{grid-template-columns:1fr}.menu-btn{display:block}.navlinks{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:flex-start;gap:16px;background:var(--bg2);border-bottom:1px solid var(--line);padding:18px 24px}.navlinks.open{display:flex}.navlinks a{display:block}}
 </style>
 </head>
 <body>
@@ -52,6 +53,7 @@
       <a href="index.html#work">Work</a>
       <a class="btn" href="quote.html">Get a Quote</a>
     </nav>
+    <button class="menu-btn" aria-label="Menu" onclick="document.querySelector('.navlinks').classList.toggle('open')">☰</button>
   </div>
 </header>
 
@@ -109,7 +111,7 @@
 <footer>
   <div class="wrap">
     <div><strong style="color:var(--ink)">StoryArc Aerial</strong> · Omaha, Nebraska</div>
-    <div>brock@brockbrown.org</div>
+    <div><a href="quote.html">Request a quote</a></div>
     <div>Cinematic FPV and aerial storytelling</div>
   </div>
 </footer>

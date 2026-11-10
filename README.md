@@ -22,7 +22,7 @@ For businesses, events, and other film and videography companies. Differentiatio
 
 ## Quote form
 
-Submits through FormSubmit to brock@brockbrown.org. The endpoint activates on the first submission via a confirmation email.
+Submits through FormSubmit to the owner's inbox; the address is assembled in JavaScript at submit time so it never appears in the page source or anywhere on the public site. The endpoint activates on the first submission via a confirmation email.
 
 ## Launch checklist
 
