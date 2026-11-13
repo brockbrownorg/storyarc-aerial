@@ -63,6 +63,16 @@
   .checkline input{width:auto}
   .helper{color:var(--muted);font-size:13px;margin-top:6px}
   @media (max-width:820px){.header-cta{display:inline-flex;align-items:center;height:36px;margin-left:auto;padding:0 14px;font-size:14px}.navlinks a{min-height:44px;display:flex;align-items:center}}
+
+  /* Lighter layout layer */
+  h1{font-size:clamp(42px,6vw,64px);letter-spacing:-.02em;line-height:1.04}
+  .eyebrow{display:inline-block;padding:7px 14px;border:1px solid var(--line);border-radius:999px;background:var(--panel)}
+  .btn{border-radius:999px}
+  .card{border-radius:18px}
+  input,select,textarea{border-radius:10px}
+
+  /* Lighter layer: original mobile h1 size preserved */
+  @media (max-width:820px){h1{font-size:34px}}
 </style>
 </head>
 <body>
